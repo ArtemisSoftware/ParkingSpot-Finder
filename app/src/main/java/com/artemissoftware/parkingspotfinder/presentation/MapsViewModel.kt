@@ -4,6 +4,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
+import com.google.android.gms.maps.model.MapStyleOptions
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
@@ -24,19 +25,19 @@ class MapsViewModel @Inject constructor(
 //            }
 //        }
 //    }
-//
-//    fun onEvent(event: MapEvent) {
-//        when(event) {
-//            is MapEvent.ToggleFalloutMap -> {
-//                state = state.copy(
-//                    properties = state.properties.copy(
-//                        mapStyleOptions = if(state.isFalloutMap) {
-//                            null
-//                        } else MapStyleOptions(MapStyle.json),
-//                    ),
-//                    isFalloutMap = !state.isFalloutMap
-//                )
-//            }
+
+    fun onEvent(event: MapEvent) {
+        when(event) {
+            is MapEvent.ToggleFalloutMap -> {
+                state = state.copy(
+                    properties = state.properties.copy(
+                        mapStyleOptions = if(state.isFalloutMap) {
+                            null
+                        } else MapStyleOptions(MapStyle.json),
+                    ),
+                    isFalloutMap = !state.isFalloutMap
+                )
+            }
 //            is MapEvent.OnMapLongClick -> {
 //                viewModelScope.launch {
 //                    repository.insertParkingSpot(ParkingSpot(
@@ -50,6 +51,6 @@ class MapsViewModel @Inject constructor(
 //                    repository.deleteParkingSpot(event.spot)
 //                }
 //            }
-//        }
-//    }
+        }
+    }
 }
