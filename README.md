@@ -21,5 +21,5 @@ App that allows user to select a spot on the map and mark it as a parking spot
 
 Image #1            |  Image #2             |  Image #3            |  Image #4      
 :-------------------------:|:----------------------------:|:----------------------------:|:----------------------------:
-<img src="images/Demeter_Recipes_1.jpg">    |  <img src="images/Demeter_Recipes_2.jpg">     |  <img src="images/Demeter_Recipes_3.jpg">  |  <img src="images/Demeter_Recipes_3.jpg"> 
+<img src="images/ParkingSpotFinder_1.jpg">    |  <img src="images/ParkingSpotFinder_2.jpg">     |  <img src="images/ParkingSpotFinder_3.jpg">  |  <img src="images/ParkingSpotFinder_4.jpg"> 
 
